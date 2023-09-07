@@ -1,23 +1,20 @@
 package com.learnbizlinks.demo.game;
 
-public class MarioGame implements Game{
+public class MarioGame{
 
-    public String up() {
-        return "Mario está saltando";
+    public void up() {
+        System.out.println("Mario está saltando");
     }
 
-
-    public String left() {
-        return null;
+    public void left() {
+        System.out.println("Mario va hacia la izquierda");
     }
 
-
-    public String right() {
-        return null;
+    public void right() {
+        System.out.println("Mario va hacia la derecha");
     }
 
-
-    public String down() {
-        return null;
+    public void down() {
+        System.out.println("Mario se agacha");
     }
 }

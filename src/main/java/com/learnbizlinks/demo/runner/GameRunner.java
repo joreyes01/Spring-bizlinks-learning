@@ -3,14 +3,21 @@ package com.learnbizlinks.demo.runner;
 import com.learnbizlinks.demo.game.*;
 
 public class GameRunner {
-//    PacmanGame pacmanGame = new PacmanGame();
-////    CrashBandicootGame crashBandicootGame = new CrashBandicootGame();
-////    SuperContraGame superContraGame = new SuperContraGame();
+    private PacmanGame game;
 
-    Game game1 = new MarioGame();
+    public GameRunner(PacmanGame game) {
+        this.game = game;
+    }
 
     public void run(){
-        System.out.println(game1.up());
+        //Validamos qué juego se está ejecutando mostrándolo en pantalla
+        System.out.println("Running Game : " + game);
+
+        //Acciones del juego
+        game.up();
+        game.down();
+        game.left();
+        game.right();
     }
 
 }

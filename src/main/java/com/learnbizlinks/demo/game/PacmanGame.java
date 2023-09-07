@@ -1,25 +1,19 @@
 package com.learnbizlinks.demo.game;
 
-public class PacmanGame implements Game {
-    public PacmanGame() {
-    }
-    //4 metodos -> 4 funciones Saltar, ir hacia adelante, ir hacia atras y tumbarse
-    //  Flechas direccionales
-
-    public String up(){
-        return "Pacman está saltando";
+public class PacmanGame {
+    public void up() {
+        System.out.println("Pacman va hacia arriba");
     }
 
-    public String left(){
-        return "Pacman se mueve hacia atras";
+    public void left() {
+        System.out.println("Pacman va hacia la izquierda");
     }
 
-    public String right(){
-        return "Pacman se mueve hacia adelante";
+    public void right() {
+        System.out.println("Pacman va hacia la derecha");
     }
 
-
-    public String down(){
-        return "Pacman se lanza al suelo";
+    public void down() {
+        System.out.println("Pacman va hacia abajo");
     }
 }
