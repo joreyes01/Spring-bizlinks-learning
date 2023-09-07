@@ -1,6 +1,6 @@
 package com.learnbizlinks.demo.game;
 
-public class MarioGame{
+public class MarioGame implements GamingConsole{
 
     public void up() {
         System.out.println("Mario está saltando");

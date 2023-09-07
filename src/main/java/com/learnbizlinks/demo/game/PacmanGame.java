@@ -1,6 +1,6 @@
 package com.learnbizlinks.demo.game;
 
-public class PacmanGame {
+public class PacmanGame implements GamingConsole{
     public void up() {
         System.out.println("Pacman va hacia arriba");
     }
