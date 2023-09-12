@@ -1,9 +1,9 @@
 package com.learnbizlinks.demo;
 
-import com.learnbizlinks.demo.game.MarioGame;
-import com.learnbizlinks.demo.game.PacmanGame;
-import com.learnbizlinks.demo.game.XmenGame;
-import com.learnbizlinks.demo.runner.GameRunner;
+import com.learnbizlinks.demo.gamingconsole.game.MarioGame;
+import com.learnbizlinks.demo.gamingconsole.game.PacmanGame;
+import com.learnbizlinks.demo.gamingconsole.game.XmenGame;
+import com.learnbizlinks.demo.gamingconsole.runner.GameRunner;
 
 
 public class AppGamingBasicJava {

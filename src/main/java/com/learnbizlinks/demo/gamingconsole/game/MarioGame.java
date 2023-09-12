@@ -1,4 +1,4 @@
-package com.learnbizlinks.demo.game;
+package com.learnbizlinks.demo.gamingconsole.game;
 
 public class MarioGame implements GamingConsole{
 

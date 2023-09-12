@@ -1,11 +1,12 @@
-package com.learnbizlinks.demo.runner;
+package com.learnbizlinks.demo.gamingconsole.runner;
 
-import com.learnbizlinks.demo.game.*;
+
+import com.learnbizlinks.demo.gamingconsole.game.GamingConsole;
 
 public class GameRunner {
     private GamingConsole game;
 
-    public GameRunner(GamingConsole game) {
+    public GameRunner(GamingConsole game) { // Inyección de Depdencia por constructor
         this.game = game;
     }
 
