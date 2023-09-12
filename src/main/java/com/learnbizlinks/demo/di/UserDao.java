@@ -1,23 +1,33 @@
 package com.learnbizlinks.demo.di;
-
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class UserDao {
 
-    public User findById(Integer id) throws SQLException {
-        try (Connection connection = Application.INSTANCE.dataSource().getConnection()) { // (1)
+    private DataSource dataSource;
+
+    public UserDao(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
+    public User findById(Integer id){
+        try (Connection connection = dataSource.getConnection()) { // (1)
             PreparedStatement selectStatement = connection.prepareStatement("select * from users where id =  ?");
             // TODO ejecutar select, manejar excepciones y retornar usuario
+        } catch (SQLException ex){
+            // TODO Manejo de Excepciones
         }
         return null;
     }
 
-    public User findByFirstName(Integer id) throws SQLException {
-        try (Connection connection = Application.INSTANCE.dataSource().getConnection()) { // (2)
+    public User findByFirstName(String first_name){
+        try (Connection connection = dataSource.getConnection()) { // (2)
             PreparedStatement selectStatement = connection.prepareStatement("select * from users where first_name =  ?");
             // TODO ejecutar select, manejar excepciones y retornar usuario
+        } catch (SQLException ex) {
+            //TODO Manejo de excepciones
         }
         return null;
     }
