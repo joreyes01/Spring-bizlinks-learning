@@ -4,6 +4,8 @@ import com.learnbizlinks.demo.gamingconsole.game.MarioGame;
 import com.learnbizlinks.demo.gamingconsole.game.PacmanGame;
 import com.learnbizlinks.demo.gamingconsole.game.XmenGame;
 import com.learnbizlinks.demo.gamingconsole.runner.GameRunner;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 
 public class AppGamingBasicJava {
