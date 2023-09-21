@@ -2,7 +2,7 @@ package com.learnbizlinks.demo.spring.model;
 
 
 
-
+//Lombok
 public class PersonClass {
     private String name;
     private int age;
@@ -36,5 +36,14 @@ public class PersonClass {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonClass{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
