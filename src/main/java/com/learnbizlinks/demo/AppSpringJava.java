@@ -1,19 +1,14 @@
 package com.learnbizlinks.demo;
 
 import com.learnbizlinks.demo.gamingconsole.config.GameConfig;
-import com.learnbizlinks.demo.gamingconsole.game.GamingConsole;
 import com.learnbizlinks.demo.gamingconsole.runner.GameRunner;
-import com.learnbizlinks.demo.spring.MyAppConfiguration;
-import com.learnbizlinks.demo.spring.Person;
+import com.learnbizlinks.demo.spring.model.PersonRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.stereotype.Component;
 
 public class AppSpringJava {
 
-    @Autowired
-    private static Person person;
 
     public static void main(String[] args) {
         // TODO 1: Configurar el contexto de Spring (@Configuration)

@@ -1,4 +1,4 @@
-package com.learnbizlinks.demo.spring;
+package com.learnbizlinks.demo.spring.model;
 
 
 

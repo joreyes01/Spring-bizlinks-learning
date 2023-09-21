@@ -1,4 +1,4 @@
-package com.dizstance.modelexample.model;
+package com.learnbizlinks.demo.spring.model;
 
 public record Address(
         String provincia,

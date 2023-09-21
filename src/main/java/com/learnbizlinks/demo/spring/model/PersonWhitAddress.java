@@ -1,6 +1,4 @@
-package com.learnbizlinks.demo.spring;
-
-import com.dizstance.modelexample.model.Address;
+package com.learnbizlinks.demo.spring.model;
 
 public record PersonWhitAddress(
         String name,
