@@ -8,6 +8,6 @@ package com.learnbizlinks.demo.spring.model;
 public record PersonRecord(
         String name,
         int age,
-        String address
+        Address address
 ) {
 }
