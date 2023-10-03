@@ -1,15 +1,16 @@
 package com.learnbizlinks.demo.spring.configuration;
 
-import com.learnbizlinks.demo.spring.component.Datasource;
 import com.learnbizlinks.demo.spring.model.Address;
 import com.learnbizlinks.demo.spring.model.PersonClass;
 import com.learnbizlinks.demo.spring.model.PersonRecord;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 @Configuration
+@ComponentScan(value = "com.learnbizlinks.demo.spring.component")
 public class MyAppConfiguration {
 
     @Bean
@@ -53,9 +54,9 @@ public class MyAppConfiguration {
         return new PersonRecord(name2, age, address);
     }
 
-    @Bean(name = "myDatasource")
-    public Datasource datasource() {
-        return new Datasource();
-    }
+//    @Bean(name = "myDatasource")
+//    public Datasource datasource() {
+//        return new Datasource();
+//    }
 
 }

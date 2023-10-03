@@ -2,8 +2,10 @@ package com.learnbizlinks.demo.gamingconsole.runner;
 
 
 import com.learnbizlinks.demo.gamingconsole.game.GamingConsole;
+import org.springframework.stereotype.Component;
 
 //UserDAO
+@Component
 public class GameRunner {
     private GamingConsole game;
 

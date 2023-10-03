@@ -1,17 +1,8 @@
 package com.learnbizlinks.demo;
 
-import com.learnbizlinks.demo.gamingconsole.config.GameConfig;
-import com.learnbizlinks.demo.gamingconsole.runner.GameRunner;
 import com.learnbizlinks.demo.spring.component.Datasource;
 import com.learnbizlinks.demo.spring.configuration.MyAppConfiguration;
-import com.learnbizlinks.demo.spring.model.Address;
-import com.learnbizlinks.demo.spring.model.PersonRecord;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.util.Arrays;
 
 //TODO Intentar - Más de un archivo de configuración
 
@@ -35,7 +26,7 @@ public class AppSpringJava {
 //            System.out.println(ctx.getBeanDefinitionNames()[i]);
 //        }
         //API Stream foreach
-        Arrays.stream(ctx.getBeanDefinitionNames()).forEach(System.out::println);
+//        Arrays.stream(ctx.getBeanDefinitionNames()).forEach(System.out::println);
 //        System.out.println(ctx.getBean("personRecord")); //toString
 //        System.out.println(ctx.getBean("personUsingClass")); //toString -> Muestra espacio en memoria JVM -> Atributos
 
@@ -50,12 +41,13 @@ public class AppSpringJava {
         //System.out.println(ctx.getBean("personParameters"));
 
         // TODO 5: Usar los Spring Beans (class & casting)
-        ((Datasource)ctx.getBean("myDatasource")).getDatasource();
-        ctx.getBean(Datasource.class).getDatasource();
+//        ((Datasource)ctx.getBean("myDatasource")).getDatasource();
+//        ctx.getBean(Datasource.class).getDatasource();
 
         // TODO LAB : Desacoplamiento nivel 3
 
         // TODO 6: Estereotipo @Component vs @Bean (Datasource.class)
+        ctx.getBean(Datasource.class).getDatasource();
 
         // TODO 7: Usando Componentes - Mismo Package
 
