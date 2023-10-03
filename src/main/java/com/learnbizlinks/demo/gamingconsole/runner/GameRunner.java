@@ -2,14 +2,16 @@ package com.learnbizlinks.demo.gamingconsole.runner;
 
 
 import com.learnbizlinks.demo.gamingconsole.game.GamingConsole;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 //UserDAO
-@Component
+@Service
 public class GameRunner {
     private GamingConsole game;
 
-    public GameRunner(GamingConsole game) { // Inyección de Depdencia por constructor
+    public GameRunner(@Qualifier(value = "pacmanGame") GamingConsole game) { // Inyección de Depdencia por constructor
         this.game = game;
     }
 

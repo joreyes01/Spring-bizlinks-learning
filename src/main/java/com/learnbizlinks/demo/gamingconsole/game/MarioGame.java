@@ -1,12 +1,14 @@
 package com.learnbizlinks.demo.gamingconsole.game;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MarioGame implements GamingConsole{
 
     public void up() {
-        System.out.println("Mario está saltando");
+        System.out.println("Mario va hacia la arriba");
     }
 
     public void left() {
